@@ -15,7 +15,7 @@ body{
     background-color: white;
 }
 .navBar{
-    z-index: 111;
+    z-index: 1111;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -100,13 +100,12 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .missionAndVisionStatement{
     position: absolute;
     top: 105%;
-    z-index: 111;
-    width: 92%;
+    width: 89%;
     height: max-content;
     border-radius: 4px;
     background-color: #007dbc;
     display: flex;
-    margin-left: 50px;
+    margin-left: 66px;
 }
 .missonStatement, .visionStatement{
     display: flex;
@@ -193,4 +192,158 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         width: 90%;
         margin-left: 5%;
     }
+}
+
+/* about us section */
+.aboutUsSection{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    height: max-content;
+    margin-top: 350px;
+}
+.aboutUsSection div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+}
+.aboutUsSection div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutUsSection div > h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: gray;
+    padding-left: 50px;
+}
+.aboutUsSection div > h1 span{
+    color: #007dbc9c;
+}
+.aboutUsSection div > p{
+    padding-left: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.aboutUsSection div > a{
+    margin-left: 50px;
+    background-color: rgb(53, 52, 52);
+    width: max-content;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Services Section */
+.servicesSection{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #06175d;
+}
+.servicesSection div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.servicesSection div h1{
+    font-size: 48px;
+    color: white;
+}
+.servicesSection div small{
+    width: 40%;
+    background-color: gray;
+    height: 1.5px;
+}
+.servicesSection div a{
+    color: white;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+.servicesSection div a:hover{
+    text-decoration: underline;
+}
+.servicesSection div span{
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-top-right-radius: 40px;
+    color: white;
+    font-size: 24px;
+    background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
+}
+
+/* why choose us Section */
+.whychooseusSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: max-content;
+    gap: 20px;
+}
+.whychooseusSection > h1{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+.whychooseusSection > h1 small{
+    color: #007dbc;
+}
+.whychooseusSection > img{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    top: 315px;
+    left: 642px;
+    width: 5%;
+}
+.whychooseucontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.whychooseucontainerDetails{
+    width: 100%;
+    display: flex;
+}
+.whychooseucontainerDetails:nth-child(1){
+    border-bottom: 2px solid gray;
+}
+.whychooseucontainerDetails > span{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.whychooseucontainerDetails > span:nth-child(1){
+    padding-right: 40px;
+    border-right: 2px solid gray;
+}
+.whychooseucontainerDetails > span:nth-child(2){
+    padding-left: 40px;
+}
+.whychooseucontainerDetails span > h1{
+    font-size: 36px;
+    color: rgb(46, 46, 46);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.whychooseucontainerDetails span > p{
+    font-size: 20px;
+    color: gray;
 }
