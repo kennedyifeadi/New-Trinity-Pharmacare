@@ -145,11 +145,82 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .visionStatement span:nth-child(3) small:nth-child(2){
     font-weight: 400;
 }
+
+/*  tablet responsiveness for carousel section  */
+
+@media screen and (max-width:884px){
+    .navBar > div{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 0px;
+    }
+    .aboutUsLink{
+        width: max-content;
+    }
+    .navBar > div > a{
+        width: 15%;
+    }
+    .navBar > div > a > img{
+        object-fit: contain;
+    }
+    .carouselItem{
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #007dbc67;
+        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
+        padding-left: 70px;
+    }
+    .carouselItemTwo{
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #007dbc67;
+        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
+        align-items: flex-end;
+        text-align: end;
+        padding-right: 70px;
+    }
+    .carouselImg{
+        width: 100%;
+    }
+    .carouselItem h1, .carouselItemTwo h1{
+        font-size: 36px;
+    }
+    .carouselItem h3, .carouselItemTwo h3{
+        font-size: 24px;
+    }
+    .carouselItem p, .carouselItemTwo p{
+        width: 90%;
+    }
+    .carouselItem a, .carouselItemTwo a{
+        width: 20%;
+    }
+    .missionAndVisionStatement{
+        height: max-content;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/*  mobile responsiveness for carousel section */
+
 @media screen and (max-width:450px){
     .navBar{
         z-index: 111;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .navBar > div{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .navBar > div > a{
+        width: 50%;
     }
     .carouselItem{
         /* display: none; */
@@ -243,7 +314,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     .aboutUsSection{
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 350px;
+        margin-top: 450px;
     }
     .aboutUsSection div > h1{
         padding-left: 0px;
