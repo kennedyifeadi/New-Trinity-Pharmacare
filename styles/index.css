@@ -546,8 +546,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     background-color: white;
     border-radius: 10px;
     color: #06175d;
@@ -555,4 +555,135 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .calltoactionSection div a:hover{
     text-decoration: underline;
+}
+
+/* footer section */
+
+.footer_Details{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+}
+.footer-info{
+    width: 100%;
+    background-color: #06175d;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer-info div{
+    height: 85%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-info-addressandContactDetails img{
+    width: 40%;
+    height: 27%;
+    margin-bottom: 10px;
+}
+.footer-info-addressandContactDetails address{
+    width: 90%;
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-info-addressandContactDetails p{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    width: 100%;
+}
+.footer-info-addressandContactDetails .copyright_socials a{
+    background-color: white;
+}
+.footer-info-addressandContactDetails .copyright_socials a:last-child{
+    background-color: rgb(81, 253, 81);
+}
+.footer-info-addressandContactDetails .copyright_socials a svg{
+    color: #06175d;
+}
+.footer-info-addressandContactDetails .copyright_socials a:last-child svg{
+    color: white;
+}
+#footer-info-aboutUs-header, #footer-info-ourServices-header, #footer-info-hospitalHours-header{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+.footer-info-aboutUs a, .footer-info-ourServices a{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+.footer-info-aboutUs a:hover, .footer-info-ourServices a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+.footer-info-hospitalHours p{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #007dbc23;
+    padding-bottom: 5px;
+    height: max-content;
+    margin-bottom: 20px;
+}
+.footer-info-hospitalHours p span{
+    display: flex;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info-hospitalHours p span small:nth-child(1){
+    font-size: 16px;
+    width: 40%;
+}
+.footer-info-hospitalHours p span small{
+    font-size: 13px;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.copyright_socials{
+    display: flex;
+    gap: 10px;
+}
+.copyright_socials a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #007dbc;
+}
+.copyright_socials a svg{
+    color: white;
+}
+.copyright span{
+    color: rgba(128, 128, 128, 0.623);
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 700;
 }
