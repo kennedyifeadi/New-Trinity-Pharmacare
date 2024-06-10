@@ -237,6 +237,32 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     border-radius: 4px;
 }
 
+/* mobile responsiveness for about us section */
+
+@media screen and (max-width:450px){
+    .aboutUsSection{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+        margin-top: 600px;
+    }
+    .aboutUsSection div > h1{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .aboutUsSection div > p{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .aboutUsSection div > a{
+        margin-left: 10px;
+        padding: 5px;
+    }
+}
+
+/*  responsiveness for about us section */
+
+
 /* Services Section */
 .servicesSection{
     display: flex;
