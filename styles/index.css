@@ -514,3 +514,45 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         transform: translate(calc(-50% - 15px));
     }
 }
+
+/* call to action Section */
+.calltoactionSection{
+    width: 93%;
+    border-radius: 30px;
+    margin-top: 70px;
+    height: max-content;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #007dbc;
+    background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
+}
+.calltoactionSection h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+.calltoactionSection div{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.calltoactionSection div h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+.calltoactionSection div a{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    color: #06175d;
+    transition: 0.5s ease-in-out;
+}
+.calltoactionSection div a:hover{
+    text-decoration: underline;
+}
