@@ -397,6 +397,43 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
 }
 
+/*  mobile responsiveness for Services section */
+
+@media screen and (max-width:450px){
+    .servicesSection{
+        height: max-content;
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    } 
+.servicesSection div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicesSection div:nth-child(2){
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+.servicesSection div h1{
+    font-size: 24px;
+}
+.servicesSection div small{
+    display: none;
+}
+.servicesSection div a{
+    font-size: 12px;
+}
+.servicesSection div span{
+    padding: 30px;
+    border-top-right-radius: 0px;
+    width: 70%;
+}
+}
+
 /* why choose us Section */
 .whychooseusSection{
     position: relative;
@@ -457,6 +494,52 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     font-size: 36px;
     color: rgb(46, 46, 46);
     font-weight: 600;
+    margin-bottom: 10px;
+}
+.whychooseucontainerDetails span > p{
+    font-size: 20px;
+    color: gray;
+}
+
+/*  mobile responsiveness why choose us section */
+.whychooseusSection{
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 20px;
+}
+.whychooseusSection > img{
+    display: none;
+}
+.whychooseucontainerDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whychooseucontainerDetails:nth-child(1){
+    border-bottom: 2px solid gray;
+}
+.whychooseucontainerDetails > span{
+    height: 260px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.whychooseucontainerDetails > span:nth-child(1){
+    padding-right: 10px;
+    border-right: 2px solid gray;
+    border-top: 2px solid gray;
+}
+.whychooseucontainerDetails > span:nth-child(2){
+    padding-left: 10px;
+    border-right: 2px solid gray;
+    border-top: 2px solid gray;
+}
+.whychooseucontainerDetails span > h1{
+    font-size: 24px;
+    color: rgb(46, 46, 46);
+    font-weight: 600;
+    text-align: center;
     margin-bottom: 10px;
 }
 .whychooseucontainerDetails span > p{
@@ -573,6 +656,33 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     height: 100%;
 }
 
+@media screen and (max-width:450px){
+    .ourproductSection{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main_product-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-cards{
+        height: 400px;
+        width: 98%;
+        margin-bottom: 40px;
+    }
+    .videoplayer{
+        margin-top: 50px;
+        width: 90%;
+        height: 300px;
+    }
+}
+
 /* our partners section */
 .ourpartnersCaruosel{
     display: flex;
@@ -631,6 +741,15 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
 }
 
+/* mobile responsiveness for partners section */
+@media screen and (max-width:450px){
+    .ourpartnersCaruosel ul li{
+        width: 100px;
+        height: 50px;
+    }
+}
+
+
 /* call to action Section */
 .calltoactionSection{
     width: 93%;
@@ -673,6 +792,30 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     text-decoration: underline;
 }
 
+/* mobile responsiveness for call to action section */
+@media screen and (max-width:450px) {
+    .calltoactionSection{
+        padding: 20px;
+    }
+    .calltoactionSection h1 {
+        font-size: 24px;
+    }
+    .calltoactionSection div{
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
+    .calltoactionSection div h3{
+        font-size: 18px;
+    }
+    .calltoactionSection div a{
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        width: max-content;
+    }
+}
 /* footer section */
 
 .footer_Details{
@@ -802,4 +945,51 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     text-transform: capitalize;
     font-size: 12px;
     font-weight: 700;
+}
+
+/* mobile responsiveness for footer section */
+
+@media screen and (max-width:450px){
+    .footer_Details{
+        margin-top: 50px;
+    }
+    .footer-Contact_info{
+        flex-direction: column;
+        height: 600px;
+    }
+    .footer-Contact_info div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        border-left: none;
+        border-bottom:1px solid rgba(0, 0, 0, 0.082) ;
+    }
+    .footer-info{
+        padding-top:50px;
+        gap:30px;
+        height:max-content;
+        flex-direction: column;
+    }
+    .footer-info div{
+        width: 100%;
+    }
+    .footer-info-addressandContactDetails img{
+        width: 20%;
+        height: 25%;
+    }
+    .footer-info-hospitalHours p span{
+        width: 100%;
+    }
+    .copyright{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        height: max-content;
+        font-size: 15px;
+    }
 }
