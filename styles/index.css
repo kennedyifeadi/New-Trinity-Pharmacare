@@ -502,49 +502,51 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 
 /*  mobile responsiveness why choose us section */
-.whychooseusSection{
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 20px;
-}
-.whychooseusSection > img{
-    display: none;
-}
-.whychooseucontainerDetails{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.whychooseucontainerDetails:nth-child(1){
-    border-bottom: 2px solid gray;
-}
-.whychooseucontainerDetails > span{
-    height: 260px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-.whychooseucontainerDetails > span:nth-child(1){
-    padding-right: 10px;
-    border-right: 2px solid gray;
-    border-top: 2px solid gray;
-}
-.whychooseucontainerDetails > span:nth-child(2){
-    padding-left: 10px;
-    border-right: 2px solid gray;
-    border-top: 2px solid gray;
-}
-.whychooseucontainerDetails span > h1{
-    font-size: 24px;
-    color: rgb(46, 46, 46);
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.whychooseucontainerDetails span > p{
-    font-size: 20px;
-    color: gray;
+@media screen and (max-width:450px) {
+    .whychooseusSection{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 20px;
+    }
+    .whychooseusSection > img{
+        display: none;
+    }
+    .whychooseucontainerDetails{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .whychooseucontainerDetails:nth-child(1){
+        border-bottom: 2px solid gray;
+    }
+    .whychooseucontainerDetails > span{
+        height: 260px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .whychooseucontainerDetails > span:nth-child(1){
+        padding-right: 10px;
+        border-right: 2px solid gray;
+        border-top: 2px solid gray;
+    }
+    .whychooseucontainerDetails > span:nth-child(2){
+        padding-left: 10px;
+        border-right: 2px solid gray;
+        border-top: 2px solid gray;
+    }
+    .whychooseucontainerDetails span > h1{
+        font-size: 24px;
+        color: rgb(46, 46, 46);
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .whychooseucontainerDetails span > p{
+        font-size: 20px;
+        color: gray;
+    }
 }
 
 /* our product section */
