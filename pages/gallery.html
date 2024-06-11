@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="../script/gallery.js" defer></script>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <header></header>
+    <nav
+        class="bg-white border-gray-200 flex justify-between  w-full sticky z-10 top-0 dark:bg-gray-900 dark:border-gray-700 navBar">
+        <div class="w-full flex flex-wrap items-center justify-between mx-auto px-4 py-2.5">
+            <a href="../index.html" class="flex">
+                <img src="../assets/trinity no RC.png" class="h-14" alt="" />
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 ms-3 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:flex flex md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm  md:border-0 md:items-center md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse">
+                    <li>
+                        <a href="../index.html"
+                            class="block py-2 px-3 text-gray-700 rounded md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                            data-dropdown-trigger="hover"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent dropdownTesting aboutUsLink"><a
+                                href="./pages/about.html">About Us</a></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 dropdowntestingcontent">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="./pages/about.html#aboutMission"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                        Mission</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/about.html#aboutVision"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                        Vision</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/about.html#aboutValues"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                        Core Values</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/about.html#FAQs"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox"
+                            data-dropdown-trigger="hover"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a
+                                href="./pages/services.html">Services</a></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownDefaultCheckbox"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="./pages/services.html#wholesale"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wholesale</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/services.html#distribution"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Distribution</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/services.html#marketing"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Marketing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft"
+                            data-dropdown-trigger="hover"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a
+                                href="./pages/productList.html">Products</a></button>
+                        <!-- Dropdown menu -->
+                    </li>
+                    <li>
+                        <a href="./gallery.html"
+                            class="block py-2 px-3 text-white  bg-blue-700 rounded md:bg-transparent md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:text-blue-700" aria-current="page">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html"
+                            class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    <li>
+                        <button id="dropdownLargeButton" data-dropdown-toggle="dropdownLarge"
+                            data-dropdown-trigger="hover"
+                            class="flex items-center justify-between bg-blue-600 w-full text-white py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-3 md:px-6 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Order</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="galleryMainContent">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="../assets/gallery 35.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="../assets/gallery 33.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="../assets/gallery 3.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="../assets/gallery 4.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="../assets/gallery 5.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="../assets/gallery 43.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+        </div>
+        <br>
+        <h1 id="gallery_h">Gallery</h1>
+        <div class="row">
+            <div class="column">
+                <img src="../assets/gallery 1.jpeg">
+                <img src="../assets/gallery 2.jpeg">
+                <img src="../assets/gallery 3.jpeg">
+                <img src="../assets/gallery 4.jpeg">
+                <img src="../assets/gallery 5.jpeg">
+                <img src="../assets/gallery 13.jpeg">
+                <img src="../assets/gallery 40.jpeg">
+                <img src="../assets/gallery 35.jpeg">
+                <img src="../assets/gallery 36.jpeg">
+            </div>
+            <div class="column">
+                <img src="../assets/gallery 14.jpeg">
+                <img src="../assets/gallery 15.jpeg">
+                <img src="../assets/gallery 16.jpeg">
+                <img src="../assets/gallery 17.jpeg">
+                <img src="../assets/gallery 18.jpeg">
+                <img src="../assets/gallery 19.jpeg">
+                <img src="../assets/gallery 38.jpeg">
+                <img src="../assets/gallery 37.jpeg">
+            </div>
+            <div class="column">
+                <img src="../assets/1.jpg">
+                <img src="../assets/gallery 20.jpeg">
+                <img src="../assets/gallery 22.jpeg">
+                <img src="../assets/gallery 21.jpeg">
+                <img src="../assets/gallery 23.jpeg">
+                <img src="../assets/gallery 24.jpeg">
+                <img src="../assets/gallery 25.jpeg">
+            </div>
+            <div class="column">
+                <img src="../assets/gallery 26.jpeg">
+                <img src="../assets/gallery 27.jpeg">
+                <img src="../assets/gallery 28.jpeg">
+                <img src="../assets/gallery 29.jpeg">
+                <img src="../assets/gallery 30.jpeg">
+                <img src="../assets/gallery 31.jpeg">
+                <img src="../assets/gallery 32.jpeg">
+                <img src="../assets/gallery 33.jpeg">
+                <img src="../assets/gallery 34.jpeg">
+                <img src="../assets/gallery 35.jpeg">
+            </div>
+        </div>
+    </main>
+    <footer class="footer_Details">
+        <section class="footer-info">
+            <div class="footer-info-addressandContactDetails">
+                <img src="../assets/TRITRI.png" alt="">
+                <address>Pacesetter Bitek Estate Quarters. between DSTV office & Jericho mall, opposite SAO filling
+                    station, Onireke, Ibadan, Oyo State.</address>
+                <p><i class="bi bi-telephone"></i> <a href="tel:+234704-100-1717">+234-704-100-1717</a></p>
+                <p><i class="bi bi-envelope-paper"></i><a
+                        href="mailto:trinitypharmacareltd@gmail.com">trinitypharmacareltd@gmail.com</a></p>
+                <span class="copyright_socials">
+                    <a href="https://web.facebook.com/profile.php?id=61554019042758" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/trinity-pharmacare">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/trinitypharmacare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.266.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.816.923.51.198 1.042.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.5042C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.3832.046.78.035 1.204.166 1.486.275.373.145.64.31.453.546.598.92c.11.281.24.705.275 1.485.03 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.598.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.396 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.74c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.5282.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.12.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+            <div class="footer-info-aboutUs">
+                <h1 id="footer-info-aboutUs-header"> Quick Links</h1>
+                <a href="about.html">
+                    About Us
+                </a>
+                <a href="productList.html">
+                    Our Products
+                </a>
+                <a href="http://trinitypharmacareltd.com/login">
+                    Order Now
+                </a><a href="pages/contact.html">
+                    Gallery
+                </a>
+            </div>
+            <div class="footer-info-ourServices">
+                <h1 id="footer-info-ourServices-header">Our services</h1>
+                <a href="services.html">
+                    Wholesale
+                </a>
+                <a href="services.html">
+                    Distribution
+                </a>
+                <a href="services.html">
+                    Marketing
+                </a>
+            </div>
+            <div class="footer-info-hospitalHours">
+                <h1 id="footer-info-hospitalHours-header">Opening Hours</h1>
+                <p>
+                    <span><small> Monday </small><em> - </em><small>08:00 am - 5:00 pm</small></span>
+                    <span><small>Tuesday</small> <em> - </em><small>08:00 am - 5:00 pm</small>
+                    </span>
+                    <span><small>Wednesday </small><em> - </em><small>08:00 am - 5:00 pm</small>
+
+                    </span>
+                    <span><small>Thursday </small><em> - </em><small>08:00 am - 5:00 pm</small>
+
+                    </span>
+                    <span><small>Friday </small><em> - </em><small>08:00 am - 5:00 pm</small>
+
+                    </span>
+                    <span><small>Saturday </small><em> - </em><small>09:00 am - 3:00 pm</small>
+
+                    </span>
+                </p>
+            </div>
+        </section>
+        <section class="copyright">
+            <span class="copyright_socials">
+                <a href="https://web.facebook.com/profile.php?id=61554019042758" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/trinity-pharmacare">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/trinitypharmacare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.266.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.816.923.51.198 1.042.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.5042C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.3832.046.78.035 1.204.166 1.486.275.373.145.64.31.453.546.598.92c.11.281.24.705.275 1.485.03 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.598.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </a>
+            </span>
+            <span>©2024. Trinity Pharmacare Ltd. All Right reserved</span>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
