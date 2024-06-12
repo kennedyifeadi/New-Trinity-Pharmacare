@@ -52,7 +52,6 @@
     flex-direction: column;
 }
 .serviceslist div span img{
-    background-color: aqua;
     border-radius: 50%;
     height: calc((100dvw / 3) - 100px);
     width: calc((100dvw / 3) - 100px);
@@ -69,4 +68,58 @@
     padding-left:40px ;
     margin-top: 20px;
     padding-right:40px ;
+}
+
+
+/* services page mobile view responsiveness */
+
+@media screen and (max-width:450px){
+    .servicesmainsection{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    .serviceherosection{
+        height: 200px;
+        background-position: 0px 00px;
+        padding-bottom: 10px;
+    }
+    .serviceherosection h1{
+        font-size: 46px;
+        padding-left: 10px;
+    }
+    .serviceslist{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 0px;
+        gap: 40px;
+    }
+    .serviceslist div{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+    .serviceslist div span{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .serviceslist div:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .serviceslist div span p{
+        padding-left:10px ;
+        margin-top: 20px;
+        padding-right:10px ;
+    }
+    .serviceslist div span img{
+        height: calc((100dvw / 1.2) - 20px);
+        width: calc((100dvw / 1.2) - 20px);
+    }
+    .calltoactionSection{
+        margin-right: 13px;
+    }
 }
