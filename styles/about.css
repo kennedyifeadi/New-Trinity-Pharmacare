@@ -1,0 +1,268 @@
+.aboutmainsection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+.aboutherosection{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    background: url('../assets/gallery\ 5.jpeg');
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    background-size: cover;
+}
+.aboutherosection div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    top: 0;
+}
+.aboutherosection h1{
+    font-size: 64px;
+    z-index: 1;
+    padding-left: 50px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.aboutus_storySection{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: max-content;
+}
+.aboutus_storySection span{
+    flex: 1;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutus_storySection span:nth-child(2){
+    padding: 30px;
+}
+.aboutus_storySection span img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 10px;
+}
+.aboutus_storySection span h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+.aboutus_storySection span h1 small{
+    color:  #007dbc;
+}
+
+.aboutus_imagesection{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.aboutus_maissionandvisionsection{
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 70px;
+    height: max-content;
+    gap: 30px;
+}
+.aboutus_maissionandvisionsection div{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+.aboutus_maissionandvisionsection div img{
+    width: 64px;
+}
+.aboutus_maissionandvisionsection div h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #007dbc;
+}
+.aboutus_maissionandvisionsection div p{
+    font-size: 18px;
+}
+
+.aboutus_corevaluessection{
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 5px;
+    margin-top:70px;
+    height: max-content;
+}
+.aboutus_corevaluessection div:nth-child(1){
+    width: 30%;
+    height: 250px;
+    background-color: #007dbc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.aboutus_corevaluessection div:nth-child(1) h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+.aboutus_corevaluessection div:nth-child(2){
+    width: 70%;
+    height: 250px;
+    padding: 50px;
+    background-color: #06175d;
+}
+.aboutus_corevaluessection div:nth-child(2) ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+.aboutus_corevaluessection div:nth-child(2) ul li{
+    width: 45%;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 30px;
+}
+.aboutus_corevaluessection div:nth-child(2) ul li::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 8px;
+    height: 20px;
+    border-radius:50%;
+    background-color: #007dbc;
+}
+
+.aboutus_commitmentsection, .aboutus_speciatiessection{
+    width: 100%;
+    margin-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    height: max-content;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+.aboutus_commitmentsection span, .aboutus_speciatiessection span{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 20px;
+    padding-block:30px ;
+}
+.aboutus_commitmentsection span:nth-child(1), .aboutus_speciatiessection span:nth-child(1){
+    width: 70%;
+}
+.aboutus_commitmentsection span:nth-child(2), .aboutus_speciatiessection span:nth-child(2){
+    width: 30%;
+}
+.aboutus_commitmentsection span h1, .aboutus_speciatiessection span h1{
+    color: #007dbc;
+    font-size: 48px;
+    font-weight: 600;
+}
+.aboutus_commitmentsection span p, .aboutus_speciatiessection span p{
+    font-size: 22px;
+    padding-right:100px ;
+}
+.aboutus_commitmentsection span img, .aboutus_speciatiessection span img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:450px) {
+    .aboutherosection{
+        height: 200px;
+        background-position: 0px 0px;
+    }
+    .aboutherosection h1{
+        font-size: 48px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .aboutus_storySection{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aboutus_storySection span:nth-child(2){
+        padding: 0px;
+    }
+    .aboutus_storySection span img{
+        object-position: 0 0px;
+    }
+    .aboutus_imagesection{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+    }
+    .aboutus_maissionandvisionsection{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .aboutus_corevaluessection{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 5px;
+    }
+    .aboutus_corevaluessection div:nth-child(1){
+        width: 100%;
+    }
+    .aboutus_corevaluessection div:nth-child(2){
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+    }
+    .aboutus_corevaluessection div:nth-child(2) ul li{
+        font-size: 18px;
+    }
+    .aboutus_corevaluessection div:nth-child(2) ul li::before{
+        left: 0;
+        top: 3px;
+    }
+    
+    .aboutus_commitmentsection, .aboutus_speciatiessection{
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column-reverse;
+    }
+    .aboutus_commitmentsection span, .aboutus_speciatiessection span{
+        padding-block:10px ;
+        gap: 10px;
+    }
+    .aboutus_commitmentsection span:nth-child(1), .aboutus_speciatiessection span:nth-child(1){
+        width: 100%;
+    }
+    .aboutus_commitmentsection span:nth-child(2), .aboutus_speciatiessection span:nth-child(2){
+        width: 100%;
+    }
+    .aboutus_commitmentsection span h1, .aboutus_speciatiessection span h1{
+        font-size: 36px;
+    }
+    .aboutus_commitmentsection span p, .aboutus_speciatiessection span p{
+        font-size: 18px;
+        padding-right:0px ;
+    }
+}
