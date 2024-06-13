@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <script src="../script/gallery.js" defer></script>
     <script src="../script/index.js" defer></script>
     <link rel="shortcut icon" href="../assets/TRITRI.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/gallery.css">
-    <title>Gallery</title>
+    <link rel="stylesheet" href="../styles/productList.css">
+    <link rel="stylesheet" href="../styles/productnames.css">
+    <title>Product</title>
 </head>
 
 <body>
@@ -37,8 +37,7 @@
                     class="flex flex-col font-medium p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm  md:border-0 md:items-center md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-8 md:rtl:space-x-reverse">
                     <li>
                         <a href="../index.html"
-                            class="block py-2 px-3 text-gray-700 rounded md:hover:text-blue-700 md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent"
-                            >Home</a>
+                            class="block py-2 px-3 text-gray-700 rounded md:hover:text-blue-700 md:bg-transparent md:text-gray-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent">Home</a>
                     </li>
                     <li>
                         <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
@@ -77,13 +76,13 @@
                     <li>
                         <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft"
                             data-dropdown-trigger="hover"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a
-                                href="productList.html">Products</a></button>
+                            class="flex items-center justify-between w-full py-2 px-3 text-white bg-blue-700 rounded hover:bg-gray-100  md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a
+                                href="productList.html" aria-current="page">Products</a></button>
                         <!-- Dropdown menu -->
                     </li>
                     <li>
                         <a href="./gallery.html"
-                            class="block py-2 px-3 text-white  bg-blue-700 rounded md:bg-transparent md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:text-blue-700" aria-current="page">Gallery</a>
+                            class="block py-2 px-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
                     </li>
                     <li>
                         <a href="contact.html"
@@ -98,125 +97,339 @@
             </div>
         </div>
     </nav>
-    <main class="galleryMainContent">
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 6</div>
-                <img src="../assets/gallery 35.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 6</div>
-                <img src="../assets/gallery 33.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 6</div>
-                <img src="../assets/gallery 3.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 6</div>
-                <img src="../assets/gallery 4.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 6</div>
-                <img src="../assets/gallery 5.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 6</div>
-                <img src="../assets/gallery 43.jpeg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
+    <main class="productmainsetion">
+        <div class="product_mainContent_landingview">
+            <div class="product_mainContent_landingview_cover"></div>
+            <h1 id="product_mainContent_landingview_h">Products List</h1>
+            <span>Products we offer</span>
         </div>
-        <br>
-        <h1 id="gallery_h">Gallery</h1>
-        <div class="row">
-            <div class="column">
-                <img src="../assets/gallery 1.jpeg">
-                <img src="../assets/gallery 2.jpeg">
-                <img src="../assets/gallery 3.jpeg">
-                <img src="../assets/gallery 4.jpeg">
-                <img src="../assets/gallery 5.jpeg">
-                <img src="../assets/gallery 13.jpeg">
-                <img src="../assets/gallery 40.jpeg">
-                <img src="../assets/gallery 35.jpeg">
-                <img src="../assets/gallery 36.jpeg">
-            </div>
-            <div class="column">
-                <img src="../assets/gallery 14.jpeg">
-                <img src="../assets/gallery 15.jpeg">
-                <img src="../assets/gallery 16.jpeg">
-                <img src="../assets/gallery 17.jpeg">
-                <img src="../assets/gallery 18.jpeg">
-                <img src="../assets/gallery 19.jpeg">
-                <img src="../assets/gallery 38.jpeg">
-                <img src="../assets/gallery 37.jpeg">
-            </div>
-            <div class="column">
-                <img src="../assets/1.jpg">
-                <img src="../assets/gallery 20.jpeg">
-                <img src="../assets/gallery 22.jpeg">
-                <img src="../assets/gallery 21.jpeg">
-                <img src="../assets/gallery 23.jpeg">
-                <img src="../assets/gallery 24.jpeg">
-                <img src="../assets/gallery 25.jpeg">
-            </div>
-            <div class="column">
-                <img src="../assets/gallery 26.jpeg">
-                <img src="../assets/gallery 27.jpeg">
-                <img src="../assets/gallery 28.jpeg">
-                <img src="../assets/gallery 29.jpeg">
-                <img src="../assets/gallery 30.jpeg">
-                <img src="../assets/gallery 31.jpeg">
-                <img src="../assets/gallery 32.jpeg">
-                <img src="../assets/gallery 33.jpeg">
-                <img src="../assets/gallery 34.jpeg">
-                <img src="../assets/gallery 35.jpeg">
-            </div>
+        <div class="productlist">
+            <ul>
+                <h1>ANALGESIC</h1>
+                <li>AVIPOL SUSPENSION</li>
+                <li>BONADOL CAPLETS</li>
+                <li>BONADOL PARACETAMOL</li>
+                <li>CETAFENAC PARACETAMOL</li>
+                <li>COLIPAN ELIXR</li>
+                <li>EASADOL ACETAMINOPHEN</li>
+                <li>EASADOL PLUS TABS</li>
+                <li>EASADOL SUSPENSION INFANT</li>
+                <li>EMCAP EXTRA</li>
+                <li>EMCAP ORDINARY</li>
+                <li>EMPROFEN SUSPENSION</li>
+                <li>EMZOR PARACETAMOL DROP</li>
+                <li>IBUPAIN SUSPENSION 100ML</li>
+                <li>IBUPAIN SUSPENSION 60ML</li>
+                <li>M&B PARACETAMOL SYRUP 6OML</li>
+                <li>M&B PARACETAMOL TABLETS</li>
+                <li>NGC VALGIN 500MG</li>
+                <li>NUROFEN CHILDREN STRAWBERRY</li>
+                <li>NUROFEN CORE 200MG CAP</li>
+                <li>NUROFEN CORE 400MG TAB</li>
+                <li>NUROFEN FOR CHILDREN ORANGE</li>
+                <li>PAINKIL CAPLET-100S</li>
+                <li>PAINKIL NIGHT TAB</li>
+                <li>PAINKIL SYRUP-60MG</li>
+                <li>PARACETAMOL SYRUP(FIDSON)</li>
+                <li>PARACETAMOL TAB 500MG FIDSON</li>
+                <li>PARACETAMOL X 96 (EMZOR)</li>
+                <li>PARADANA PARACETAMOL TAB</li>
+                <li>PENTAX EXTRA</li>
+                <li>TABALON 400MG</li>
+                <li>THEORICA PREGABALIN CAPS</li>
+              </ul>
+              <ul>
+                <h1>ANTACID</h1>
+                <li>DANACID TAB</li>
+                <li>GAVISCON DOUBLE ACTION LIQUID</li>
+                <li>GAVISCON PEPPERMINT LIOUID</li>
+                <li>GELACID SUSP-(100ML ,200ML)</li>
+              </ul>
+              <ul>
+                <h1>ANTI-DIABETIC</h1>
+                <li>BONDOMET TAB</li>
+                <li>BONDURETIC TAB</li>
+                <li>DIAMET TAB 500MG</li>
+                <li>DIATAB GLIBENCLAMIDE</li>
+                <li>MEPIRYL TAB( 2MG ,4MG )</li>
+              </ul>
+              <ul>
+                <h1>ANTI-HYPERTENSIVE</h1>
+                <li>ASOMEX TAB (2.5 , 5)</li>
+                <li>GLUFORMIN METFORMIN 500MG</li>
+                <li>NIFEDIPINE RETARD TAB</li>
+                <li>NIFEDIPINE XL TAB</li>
+                <li>RAMITACE TABLET</li>
+                <li>THIAPRIL TABLET 5MG\ 12.5MG</li>
+                <li>VARSPAR AMLODIPINE (5MG,10MG)</li>
+              </ul>
+              <ul>
+                <h1>ANTI-ULCER</h1>
+                <li>BONDPRAZ OMEPRAZOLE CAP</li>
+                <li>LOMEZ</li>
+                <li>MEPRAZIL 20 OMEPRAZOLE CAP</li>
+              </ul>
+              <ul>
+                <h1>ANTI_BIOTICS</h1>
+                <li>AZITHROMYCIN DRY SYRUP</li>
+                <li>CEFUROXIME SYRUP 125MG</li>
+                <li>EMZOCLOX SUSPENSION</li>
+                <li>FUROXETIL (TAB, SUSPENSION)</li>
+                <li>GRISEOVAL ORAL SUSPENSION</li>
+                <li>LAM IBUPROFEN ORAL SUSP</li>
+                <li>LOXAGYL METRONIDAZOLE SUSP</li>
+                <li>METRONE SUSPENSION 60ML</li>
+                <li>METROZOL (1000S)</li>
+              </ul>
+              <ul>
+                <h1>ANTI_EMETICS</h1>
+                <li>FLUTEX CAP</li>
+                <li>PILEX TAB</li>
+                <li>PLADOX TAB</li>
+              </ul>
+              <ul>
+                <h1>ANTI-FUNGAL</h1>
+                <li>SAF KIT</li>
+              </ul>
+              <ul>
+                <h1>ANTI-HISTAMINES</h1>
+                <li>COLIPAN ELIXIR</li>
+                <li>DR MEYERS ASMANOL</li>
+              </ul>
+              <ul>
+                <h1>ANTI-INFECTIVES</h1>
+                <li>ABF 3 CREAM</li>
+                <li>METAZONE CREAM FIDSON</li>
+                <li>TRIBOTAN CREAM (ADULT , BABY )</li>
+                <li>VALPRE 20G CREAM</li>
+                <li>WHITFIELD OINTMENT</li>
+                <li>ZETGEL EMULGEL CREAM</li>
+              </ul>
+              <ul>
+                <h1>ANTI-INFLAMMATORY</h1>
+                <li>EMPRIN</li>
+                <li>EMZOBREX CAP</li>
+                <li>KETOVAIL CAPSULES</li>
+                <li>LEVOTIL TAB 500MG</li>
+                <li>LIPOFIX TABLET (10MG, 20MG)</li>
+                <li>LUCAL 5</li>
+                <li>LUCAL 10</li>
+                <li>LUMIHALE 10</li>
+                <li>LUMIHALE PLUS</li>
+                <li>LUMIPRESS 50</li>
+                <li>LUMISTEROL 10</li>
+                <li>LUMISTEROL 20</li>
+                <li>M&B CIPRO CAPLET</li>
+              </ul>
+              <ul>
+                <h1>ANTI-MALARIA</h1>
+                <li>ANATE</li>
+                <li>ARENAX PLUS 20\120 1*6</li>
+                <li>ARENAX PLUS 20\120 3*6</li>
+                <li>ARENAX PLUS 20\120 4*6 TAB</li>
+                <li>ARENAX PLUS 20\120 TAB 2*6</li>
+                <li>ARENAX PLUS FORTE 80\480 TAB 1*6</li>
+                <li>ARTELUM COMBO 80/480 + PARA 500MG</li>
+                <li>ARTELUM TAB 80/480</li>
+                <li>ARTHEMED 80/480 10*6</li>
+                <li>BONABABE SYRUP 60ML</li>
+                <li>EMAL INJECTION</li>
+                <li>LOKMAL QS COMBI CAPLET 80/480</li>
+                <li>LOKMAL SUSPENSION</li>
+                <li>LOKMAL TABLET 1*24</li>
+                <li>MALACT 40MG 9/10</li>
+                <li>MALACT TAB 12*10</li>
+                <li>MALDOX TAB 9*10</li>
+                <li>MAXIQUINE TABLET 20*105</li>
+                <li>SWIDAR</li>
+                <li>URZATEM 20/120 X24</li>
+                <li>URZATEM 80/480 1*6</li>
+              </ul>
+              <ul>
+                <h1>CLEANING</h1>
+                <li>COTTON WOOL (100G,50G,20G)</li>
+              </ul>
+              <ul>
+                <h1>CONTRACEPTIVES</h1>
+                <li>DUREX EXTRA SAFE</li>
+              </ul>
+              <ul>
+                <h1>COUGH SYRUP</h1>
+                <li>BRONCHOLYTE ELIXR</li>
+                <li>COFMIX JUNIOR SYRUP</li>
+                <li>COFMIX SYRUP</li>
+                <li>EMZOLYN 4 WAY SYRUP</li>
+                <li>EMZOLYN COUGH SYRUP CHILDREN</li>
+                <li>EMZOLYN EXPECTORANT ADULT</li>
+                <li>FITULIN COUGH SYRUP</li>
+                <li>LIXYPED COUGH LINCTUS CHILDREN</li>
+                <li>MAYSEDYL EXPECTORANT</li>
+                <li>NASODYNE WITH PROMETHAZINE</li>
+                <li>NASODYNE CHILD EXPECTORANT</li>
+                <li>NASODYNE EXPECTORANT ADULT</li>
+                <li>NGC CHILDREN COUGH SYRUP</li>
+                <li>NGC EXPECTORANT ADULT</li>
+                <li>SALBUTAMOL SYRUP</li>
+                <li>TUXIL D ADULT COUGH SYRUP EXPECTORANT</li>
+                <li>TUXIL D CHILD COUGH SYRUP EXPECTORANT</li>
+                <li>TUXIL N ADULT COUGH SYRUP</li>
+                <li>TUXIL N EXPECTORANT CHILDREN</li>
+                <li>XPEL COUGH EXPECTORANT</li>
+              </ul>
+              <ul>
+                <h1>DEWORMING</h1>
+                <li>COMBIWORM TAB</li>
+                <li>ZOLAT TAB (200MG, 400MG)</li>
+              </ul>
+              <ul>
+                <h1>DISINFECTANT</h1>
+                <li>DETTOL (750ML,165ml,250ml,500ml,75ml)</li>
+              </ul>
+              <ul>
+                <h1>EYE DROP</h1>
+                <li>BETAMETHASONE & NEOMYCIN</li>
+                <li>CHLORAMPHENICOL</li>
+                <li>GENTAMYCIN</li>
+              </ul>
+              <ul>
+                <h1>HORMONAL</h1>
+                <li>ADDYZOA FIDSON</li>
+                <li>EVENING PRIME ROSE 1000MG</li>
+                <li>M2-TONE TAB FIDSON</li>
+              </ul>
+              <ul>
+                <h1>INFUSION</h1>
+                <li>CIPROTAB IV</li>
+                <li>DANA CIPROFLOXACIN INFUSION IV</li>
+                <li>DANA DARROWS SOLUTION IV (FULL STRENGTH)</li>
+                <li>DANA DARROWS SOLUTION IV (HALF STRENGTH)</li>
+                <li>DANA DEXTROSE 5% SALINE 0.9%</li>
+                <li>DANA DEXTROSE 5%</li>
+                <li>DANA METRONIDAZOLE IV</li>
+                <li>DANA NORMAL SALINE 0.9%</li>
+                <li>RINGERS LACTATE IV</li>
+              </ul>
+              <ul>
+                <h1>LOZENGES</h1>
+                <li>COFLIN LOZENGES</li>
+                <li>STREPSILS HONEYSLEMON</li>
+                <li>STREPSILS INTENSIVE (HONEY & LEMON)</li>
+                <li>STREPSILS LOZENGE REGULAR</li>
+                <li>STREPSILS ORANGE+VIT C</li>
+              </ul>
+              <ul>
+                <h1>MULTIVITAMIN / VITAMINS</h1>
+                <li>ASTYFER CAP</li>
+                <li>ASTYFER LIQUID</li>
+                <li>ASTYMIN LIQUID</li>
+                <li>B. COMPLEX *1000</li>
+                <li>BECOMBION SYRUP (150ML,300ML)</li>
+                <li>DANACEE VITAMIN C SYRUP</li>
+                <li>DR MEYERS FOLIC ACID</li>
+                <li>EMVIT.C CHEWABLE 100</li>
+                <li>FEROBIN PLUS CAPSULE</li>
+                <li>FEROBIN SYRUP</li>
+                <li>FEROBIN SYRUP PLUS</li>
+                <li>FERRODAN PLUS CAPSULE</li>
+                <li>FERROTOGEN TONC</li>
+                <li>FOLIC ACID + B12 TABS (100S)</li>
+                <li>FOLIC ACID 1000 (EMZOR)</li>
+                <li>MIM CAPS</li>
+                <li>MIM TONIC (100ML,300ML)</li>
+                <li>MULTIVITAMIN SYRUP FIDSON</li>
+                <li>ORHEPTAL CAPSULE-30S</li>
+                <li>ORHEPTAL TONIC (1 LITRE,100ML,300ML)</li>
+                <li>VITAMIN C SYRUP</li>
+              </ul>
+              <ul>
+                <h1>PIRITON</h1>
+                <li>CHLORPHENIRAMINE TAB</li>
+                <li>MOBITIN SYRUP</li>
+                <li>ROPHEGAN ELIXIR</li>
+              </ul>
+              <ul>
+                <h1>POISONS</h1>
+                <li>BROMATAN BROMAZEPAM 1.5MG</li>
+                <li>BROMATAN BROMAZEPAM 3MG</li>
+                <li>PILAT INJECTION</li>
+                <li>SWIDON NITRAZEPAM</li>
+                <li>SWIPHA TALEN</li>
+                <li>TALEN BROMAZEPAM</li>
+                <li>UNIVAL DIAZEPAM</li>
+              </ul>
+              <ul>
+                <h1>SUPPLEMENTS</h1>
+                <li>ARTHOCARE CAP</li>
+                <li>ARTHOCARE FORTE</li>
+                <li>B.COMPLEX SYRUP</li>
+                <li>CALCIMAX PLUS</li>
+                <li>CALCIMAX TAB 30</li>
+                <li>CALCITAB-60S</li>
+                <li>CALCITONE 100</li>
+                <li>IMMUNAL TAB</li>
+                <li>LIQUID IRON (100ML,200ML)</li>
+                <li>NATURES FIELD SAW PALMETTO</li>
+                <li>NATURE FIELD EYE CAPS EYE ANTIOXIDANT</li>
+                <li>NATURE FIELD JOINT RENEW ADVANCE</li>
+                <li>NATURESFIELD L&O CAPS</li>
+                <li>NATURESFIELD HEALTHY YOU WOMAN</li>
+                <li>NATURESFIELD MELATONIN</li>
+                <li>NATURESFIELD APPLE CIDER VINEGAR</li>
+                <li>NATURESFIELD EVENING PRIME ROSE</li>
+                <li>NATURESFIELD FOLITE FOLIC ACID</li>
+                <li>NATURESFIELD GLUTATHIONE</li>
+                <li>NATURESFIELD IMMUNE DEFENCE ADVANCE</li>
+                <li>NATURESFIELD MEGA C (VIT.C 1000MG X100)</li>
+                <li>NATURESFIELD MEGA C(VIT C)</li>
+                <li>NATURESFIELD STRESS DEFENCE</li>
+                <li>NATURESFIELD SURESLIM FAT BURNER</li>
+                <li>NATURESFIELD VITAMIN C</li>
+                <li>NATURES FIELD VITAMIN D3</li>
+                <li>NATURESFIELD VITAMIN E</li>
+                <li>NATURESFIELD ZINC</li>
+                <li>OLIGOCARE TABLETS</li>
+                <li>OMEGA 3</li>
+                <li>OVACARE TABLETS</li>
+                <li>ZINC PAEDIATRIC (10*10 ,1*10)</li>
+              </ul>
+                                                                                                                                                                                                                                                                                                                                                              
         </div>
-
         <div class="ourpartnersCaruosel">
             <h1>Our Partners</h1>
             <div class="partnersScroller">
                 <ul class="scroller__inner">
-                <li><img src="../assets/adler.png" alt=""></li>
-                <li><img src="../assets/alpha-pharma.png" alt=""></li>
-                <li><img src="../assets/bond.png" alt=""></li>
-                <li><img src="../assets/Dana.png" alt=""></li>
-                <li><img src="../assets/Emzor.jpg" alt=""></li>
-                <li><img src="../assets/Fidson.png" alt=""></li>
-                <li><img src="../assets/flogo.png" alt=""></li>
-                <li><img src="../assets/Reckitt_logo.png" alt=""></li>
-                <li><img src="../assets/HEADER.png" alt=""></li>
-                <li><img src="../assets/logo-dark.png" alt=""></li>
-                <li><img src="../assets/logo-white-full.png" alt="" style="background-color: black;"></li>
-                <li><img src="../assets/logo.jpg" alt=""></li>
-                <li><img src="../assets/Sylken-Logo.jpg" alt=""></li>
-                <li><img src="../assets/vitabiotics.jpg" alt=""></li>
-                <li><img src="../assets/swipha.png" alt=""></li>
-                <li><img src="../assets/adler.png" alt=""></li>
-                <li><img src="../assets/alpha-pharma.png" alt=""></li>
-                <li><img src="../assets/bond.png" alt=""></li>
-                <li><img src="../assets/Dana.png" alt=""></li>
-                <li><img src="../assets/Emzor.jpg" alt=""></li>
-                <li><img src="../assets/Fidson.png" alt=""></li>
-                <li><img src="../assets/flogo.png" alt=""></li>
-                <li><img src="../assets/Reckitt_logo.png" alt=""></li>
-                <li><img src="../assets/HEADER.png" alt=""></li>
-                <li><img src="../assets/logo-dark.png" alt=""></li>
-                <li><img src="../assets/logo-white-full.png" alt="" style="background-color: black;"></li>
-                <li><img src="../assets/logo.jpg" alt=""></li>
-                <li><img src="../assets/Sylken-Logo.jpg" alt=""></li>
-                <li><img src="../assets/vitabiotics.jpg" alt=""></li>
-                <li><img src="../assets/swipha.png" alt=""></li>
-            </ul>
-        </div>
+                    <li><img src="../assets/adler.png" alt=""></li>
+                    <li><img src="../assets/alpha-pharma.png" alt=""></li>
+                    <li><img src="../assets/bond.png" alt=""></li>
+                    <li><img src="../assets/Dana.png" alt=""></li>
+                    <li><img src="../assets/Emzor.jpg" alt=""></li>
+                    <li><img src="../assets/Fidson.png" alt=""></li>
+                    <li><img src="../assets/flogo.png" alt=""></li>
+                    <li><img src="../assets/Reckitt_logo.png" alt=""></li>
+                    <li><img src="../assets/HEADER.png" alt=""></li>
+                    <li><img src="../assets/logo-dark.png" alt=""></li>
+                    <li><img src="../assets/logo-white-full.png" alt="" style="background-color: black;"></li>
+                    <li><img src="../assets/logo.jpg" alt=""></li>
+                    <li><img src="../assets/Sylken-Logo.jpg" alt=""></li>
+                    <li><img src="../assets/vitabiotics.jpg" alt=""></li>
+                    <li><img src="../assets/swipha.png" alt=""></li>
+                    <li><img src="../assets/adler.png" alt=""></li>
+                    <li><img src="../assets/alpha-pharma.png" alt=""></li>
+                    <li><img src="../assets/bond.png" alt=""></li>
+                    <li><img src="../assets/Dana.png" alt=""></li>
+                    <li><img src="../assets/Emzor.jpg" alt=""></li>
+                    <li><img src="../assets/Fidson.png" alt=""></li>
+                    <li><img src="../assets/flogo.png" alt=""></li>
+                    <li><img src="../assets/Reckitt_logo.png" alt=""></li>
+                    <li><img src="../assets/HEADER.png" alt=""></li>
+                    <li><img src="../assets/logo-dark.png" alt=""></li>
+                    <li><img src="../assets/logo-white-full.png" alt="" style="background-color: black;"></li>
+                    <li><img src="../assets/logo.jpg" alt=""></li>
+                    <li><img src="../assets/Sylken-Logo.jpg" alt=""></li>
+                    <li><img src="../assets/vitabiotics.jpg" alt=""></li>
+                    <li><img src="../assets/swipha.png" alt=""></li>
+                </ul>
+            </div>
         </div>
         <div class="calltoactionSection">
             <h1>Seeking a reliable pharmaceutical partner?</h1>
