@@ -1,0 +1,27 @@
+{
+  "name": "new-trinity-pharmacare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennedyifeadi/New-Trinity-Pharmacare.git"
+  },
+  "author": "Obycodez && Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennedyifeadi/New-Trinity-Pharmacare/issues"
+  },
+  "homepage": "https://github.com/kennedyifeadi/New-Trinity-Pharmacare#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}
