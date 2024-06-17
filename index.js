@@ -23,8 +23,13 @@ app.set("view engine", "ejs");
 app.locals.isActiveRoute = isActiveRoute;
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.render("home");
 });
+
+app.all("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "error.html"));
+  });
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
