@@ -50,16 +50,16 @@
             </div>
         </div>
         <div class="contact_mainContent_leaveAMessage">
-            <form action="">
+            <form action="/contact" method="post">
                 <div class="contact_mainContent_leaveAMessage_header">
                     <h1 id="contact_mainContent_leaveAMessage_h">Leave us your info</h1>
                     <p>we’ll get back to you as soon as possible </p>
                 </div>
                 <div class="contact_mainContent_leaveAMessage_messageInput">
-                    <input type="text" placeholder="Full Name*">
-                    <input type="email" placeholder="Email Address*">
-                    <input type="text" placeholder="Subject*">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message*" style="border: none;"></textarea>
+                    <input type="text" placeholder="Full Name*" name="name">
+                    <input type="email" placeholder="Email Address*" name="email">
+                    <input type="text" placeholder="Subject*" name="subject">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message*" style="border: none;"></textarea>
                     <input type="submit" value="SUBMIT NOW">
                 </div>
             </form>

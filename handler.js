@@ -1,6 +1,10 @@
-const router = require('express').Router();
+const sendEmail = require("./providers/sendContact");
+const tryCatch = require("./providers/tryCatch");
+const router = require("express").Router();
 
-router.get("/", function (req, res) {
+router.get(
+  "/",
+  tryCatch(function (req, res) {
     res.render("index", {
       title: "Trinity Pharmacare-Home",
       style: "index",
@@ -8,9 +12,12 @@ router.get("/", function (req, res) {
       mainClass: "main_Content",
       script: false
     });
-  });
+  })
+);
 
-  router.get("/contact", function (req, res) {
+router.get(
+  "/contact",
+  tryCatch(function (req, res) {
     res.render("contact", {
       title: "Contact",
       style: "contact",
@@ -18,9 +25,12 @@ router.get("/", function (req, res) {
       currentRoute: "/contact",
       script: false
     });
-  });
+  })
+);
 
-  router.get("/about", function (req, res) {
+router.get(
+  "/about",
+  tryCatch(function (req, res) {
     res.render("about", {
       title: "About Us",
       style: "about",
@@ -28,9 +38,12 @@ router.get("/", function (req, res) {
       currentRoute: "/about",
       script: false
     });
-  });
+  })
+);
 
-  router.get("/gallery", function (req, res) {
+router.get(
+  "/gallery",
+  tryCatch(function (req, res) {
     res.render("gallery", {
       title: "Gallery",
       style: "gallery",
@@ -38,9 +51,12 @@ router.get("/", function (req, res) {
       currentRoute: "/gallery",
       script: "gallery"
     });
-  });
+  })
+);
 
-  router.get("/services", function (req, res) {
+router.get(
+  "/services",
+  tryCatch(function (req, res) {
     res.render("services", {
       title: "Services",
       style: "services",
@@ -48,9 +64,12 @@ router.get("/", function (req, res) {
       currentRoute: "/services",
       script: false
     });
-  });
+  })
+);
 
-  router.get("/products", function (req, res) {
+router.get(
+  "/products",
+  tryCatch(function (req, res) {
     res.render("productList", {
       title: "Products",
       style: "productList",
@@ -58,5 +77,17 @@ router.get("/", function (req, res) {
       currentRoute: "/products",
       script: false
     });
-  });
+  })
+);
+
+router.post(
+  "/contact",
+  tryCatch(async function (req, res) {
+    console.log(req.body);
+    const { name, email, subject, message } = req.body;
+    await sendEmail({ name, email, subject, message });
+    res.redirect("/contact");
+  })
+);
+
 module.exports = router;
