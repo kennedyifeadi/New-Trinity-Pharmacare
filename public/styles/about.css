@@ -180,7 +180,7 @@
     font-weight: 600;
 }
 .aboutus_commitmentsection span p, .aboutus_speciatiessection span p{
-    font-size: 22px;
+    font-size: 18px;
     padding-right:100px ;
 }
 .aboutus_commitmentsection span img, .aboutus_speciatiessection span img{
@@ -188,6 +188,50 @@
     width: 100%;
     object-fit: contain;
 }
+
+/* tablet responsiveness */
+
+@media screen and (max-width:900px) {
+    .aboutus_storySection{
+        flex-direction: column;
+    }
+    .aboutus_storySection span{
+        height:max-content;
+    }
+    
+    .aboutus_corevaluessection div:nth-child(1){
+        height: 270px;
+    }
+    .aboutus_corevaluessection div:nth-child(2){
+        height: 270px;
+    }
+    
+    .aboutus_commitmentsection, .aboutus_speciatiessection{
+        width: 100%;
+        margin-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: max-content;
+        background-color: rgba(128, 128, 128, 0.479);
+    }
+    .aboutus_commitmentsection span, .aboutus_speciatiessection span{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 20px;
+        padding-block:30px ;
+    }
+    .aboutus_commitmentsection span:nth-child(1), .aboutus_speciatiessection span:nth-child(1){
+        width: 100%;
+    }
+    .aboutus_commitmentsection span:nth-child(2), .aboutus_speciatiessection span:nth-child(2){
+       width: 100%;
+    }
+}
+
+/* mobile responsiveness */
 
 @media screen and (max-width:450px) {
     .aboutherosection{
