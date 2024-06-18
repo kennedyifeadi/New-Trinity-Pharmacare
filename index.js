@@ -4,7 +4,7 @@ const express = require("express");
 const expressLayout = require("express-ejs-layouts");
 
 const { isActiveRoute } = require("./helpers/routeHelpers");
-
+const Handler = require("./handler");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const path = require("path");
@@ -22,10 +22,7 @@ app.set("view engine", "ejs");
 
 app.locals.isActiveRoute = isActiveRoute;
 
-app.get("/", function (req, res) {
-  res.render("home");
-});
-
+app.use(Handler);
 app.all("*", function (req, res) {
     res.sendFile(path.join(__dirname, "error.html"));
   });

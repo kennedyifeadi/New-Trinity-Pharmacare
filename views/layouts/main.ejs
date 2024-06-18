@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <main><%- body %></main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="./assets/TRITRI.png" type="image/x-icon" />
+    <script src="./script/<%= script %>.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/<%= style %>.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs') %>
+    <main class="<%= mainClass %>">
+      <%- body %> <%- include('../partials/pre-footer.ejs') %>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
 </html>
