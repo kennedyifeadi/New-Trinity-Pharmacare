@@ -22,10 +22,11 @@ router.get("/", function (req, res) {
 
   router.get("/about", function (req, res) {
     res.render("about", {
-      title: "Trinity Pharmacare-Home",
-      name: "about",
+      title: "About Us",
+      style: "about",
+      mainClass: "aboutmainsection",
       currentRoute: "/about",
-      script: false
+      script: "index"
     });
   });
 
