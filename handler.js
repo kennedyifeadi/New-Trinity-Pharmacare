@@ -4,9 +4,9 @@ router.get("/", function (req, res) {
     res.render("index", {
       title: "Trinity Pharmacare-Home",
       style: "index",
-      script: "index",
       currentRoute: "/",
       mainClass: "main_Content",
+      script: false
     });
   });
 
@@ -16,7 +16,7 @@ router.get("/", function (req, res) {
       style: "contact",
       mainClass: "contact_mainContent",
       currentRoute: "/contact",
-      script: "index"
+      script: false
     });
   });
 
@@ -26,25 +26,37 @@ router.get("/", function (req, res) {
       style: "about",
       mainClass: "aboutmainsection",
       currentRoute: "/about",
-      script: "index"
+      script: false
     });
   });
 
-  router.get("/", function (req, res) {
-    res.render("home", {
-      title: "Trinity Pharmacare-Home",
-      name: "home",
-      currentRoute: "/",
-      script: true
+  router.get("/gallery", function (req, res) {
+    res.render("gallery", {
+      title: "Gallery",
+      style: "gallery",
+      mainClass: "galleryMainContent",
+      currentRoute: "/gallery",
+      script: "gallery"
     });
   });
 
-  router.get("/", function (req, res) {
-    res.render("home", {
-      title: "Trinity Pharmacare-Home",
-      name: "home",
-      currentRoute: "/",
-      script: true
+  router.get("/services", function (req, res) {
+    res.render("services", {
+      title: "Services",
+      style: "services",
+      mainClass: "servicesmainsection",
+      currentRoute: "/services",
+      script: false
+    });
+  });
+
+  router.get("/products", function (req, res) {
+    res.render("productList", {
+      title: "Products",
+      style: "productList",
+      mainClass: "productmainsetion",
+      currentRoute: "/products",
+      script: false
     });
   });
 module.exports = router;
