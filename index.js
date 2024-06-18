@@ -24,6 +24,10 @@ app.set("view engine", "ejs");
 
 app.locals.isActiveRoute = isActiveRoute;
 
+app.get(
+  "/products/names",function (req, res) {
+    res.sendFile(path.join(__dirname, "productnames.html"));
+  });
 app.use(Handler);
 app.all("*", function (req, res) {
   res.sendFile(path.join(__dirname, "error.html"));
