@@ -168,6 +168,17 @@
     font-weight: 600;
     font-size: 15px;
 }
+
+/* tablet responsiveness */
+@media screen and (max-width:900px) {
+    .contact_mainContent_leaveAMessage_header{
+        width: 80%;
+    }
+    .contact_mainContent_leaveAMessage_messageInput{
+        width: 80%;
+    }
+}
+
 .followoursocials{
     width: 100%;
     height: max-content;

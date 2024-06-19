@@ -315,7 +315,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     .aboutUsSection{
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 450px;
+        margin-top: 470px;
     }
     .aboutUsSection div > h1{
         padding-left: 0px;
@@ -398,6 +398,29 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
 }
 
+/*  tablet responsiveness for Services section */
+
+@media screen and (max-width:900px){
+    .servicesSection{
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .servicesSection div h1{
+        font-size: 36px;
+    }
+    .servicesSection div small{
+        width: 20%;
+    }
+    .servicesSection div span{
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-top-right-radius: 40px;
+        font-size: 24px;
+    }
+}
+
 /*  mobile responsiveness for Services section */
 
 @media screen and (max-width:450px){
@@ -455,32 +478,37 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .whychooseusSection > h1 small{
     color: #007dbc;
 }
-.whychooseusSection > img{
-    position: absolute;
+
+.whychooseucontainer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.whychooseusSection .whychooseucontainer > img{
     background-color: white;
     padding: 10px;
     border-radius: 50%;
-    top: 315px;
-    left: 642px;
-    width: 5%;
-}
-.whychooseucontainer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100px;
+    position: absolute;
+    top: 50%;
 }
 .whychooseucontainerDetails{
     width: 100%;
     display: flex;
+    height: max-content;
 }
-.whychooseucontainerDetails:nth-child(1){
+.whychooseucontainerDetails:nth-child(2){
     border-bottom: 2px solid gray;
 }
 .whychooseucontainerDetails > span{
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 260px;
+    height: max-content;
     padding-bottom: 20px;
     padding-top: 50px;
 }
@@ -509,7 +537,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         padding-right: 10px;
         gap: 20px;
     }
-    .whychooseusSection > img{
+    .whychooseusSection .whychooseucontainer > img{
         display: none;
     }
     .whychooseucontainerDetails{
@@ -615,7 +643,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
-    row-gap: 20px;
 }
 .product-cards{
     height: 300px;
@@ -645,7 +672,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     justify-content: center;
 }
 .product-cards:hover .product-cardImage{
-    /* width: 420px; */
     object-fit: cover;
 }
 .videoplayer{
@@ -658,6 +684,30 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     width: 100%;
     height: 100%;
 }
+
+/* mobile responsiveness of product section */
+
+@media screen and (max-width:900px){
+    .main_product{
+        margin-top: 0px;
+        height: max-content;
+        height: max-content;
+    }
+    .main_product h1::before{
+        width: 10%;
+    }
+    .main_product-cards{
+        row-gap: 50px;
+    }
+    .product-cards{
+        width: 45%;
+    }
+    .videoplayer{
+        width: 80%;
+    }
+}
+
+/* mobile responsiveness of product section */
 
 @media screen and (max-width:450px){
     .ourproductSection{
@@ -716,8 +766,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     gap: 30px;
 }
 .ourpartnersCaruosel ul li{
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 4px gray;
 }
@@ -725,7 +775,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     width: 100%;
     border-radius: 10px;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .partnersScroller[data-animated= "true"]{
     overflow: hidden;
@@ -782,6 +832,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .calltoactionSection div a{
     padding: 10px;
+    min-width: max-content;
+    max-width: 30%;
     padding-left: 30px;
     padding-right: 30px;
     font-size: 18px;
@@ -790,9 +842,19 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     border-radius: 10px;
     color: #06175d;
     transition: 0.5s ease-in-out;
+    height: max-content;
 }
 .calltoactionSection div a:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width:900px) {
+    .calltoactionSection div a{
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 24px;
+    }
 }
 
 /* mobile responsiveness for call to action section */
@@ -846,8 +908,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     flex-direction: column;
 }
 .footer-info-addressandContactDetails img{
-    width: 40%;
-    height: 27%;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 .footer-info-addressandContactDetails address{
@@ -896,6 +958,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 }
 .footer-info-hospitalHours p{
+    width:max-content ;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #007dbc23;
