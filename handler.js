@@ -85,7 +85,6 @@ router.get(
 router.post(
   "/contact",
   tryCatch(async function (req, res) {
-    console.log(req.body);
     const { name, email, subject, message } = req.body;
     await sendEmail({ name, email, subject, message });
     res.redirect("/contact");
