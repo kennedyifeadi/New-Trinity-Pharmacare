@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding:0px;
     margin:0px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -49,8 +51,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    padding-right: 30px;
+    align-items: flex-start;
+    padding-left: 50px;
 }
 .testing{
     display: flex;
@@ -81,7 +83,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     
 }
 .carouselItemTwo p{
-    text-align: end;
+    text-align: start;
 }
 .carouselItem a, .carouselItemTwo a{
     text-decoration: none;
@@ -374,6 +376,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .servicesSection div h1{
     font-size: 48px;
     color: white;
+    font-weight: 600;
 }
 .servicesSection div small{
     width: 40%;
@@ -476,6 +479,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     text-align: center;
 }
 .whychooseusSection > h1 small{
+    font-size: 48px;
+    font-weight: 600;
     color: #007dbc;
 }
 
@@ -602,7 +607,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     justify-self: center;
 }
 .main_product h1{
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 600;
     color: #036ea3;
     position: relative;
@@ -680,7 +685,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     height: 300px;
 }
 .videoplayer video{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
@@ -817,12 +822,13 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .calltoactionSection h1 {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 800;
     color: white;
+    text-align: center
 }
 .calltoactionSection div{
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
 }
 .calltoactionSection div h3{
@@ -837,7 +843,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     padding-left: 30px;
     padding-right: 30px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     background-color: white;
     border-radius: 10px;
     color: #06175d;
@@ -849,6 +855,9 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 
 @media screen and (max-width:900px) {
+    .calltoactionSection h1 {
+        font-size: 28px;
+    }
     .calltoactionSection div a{
         padding: 5px;
         padding-left: 20px;
@@ -863,12 +872,12 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         padding: 20px;
     }
     .calltoactionSection h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .calltoactionSection div{
         flex-direction: column;
         gap: 20px;
-        width: 90%;
+        width: 100%;
     }
     .calltoactionSection div h3{
         font-size: 18px;
@@ -893,29 +902,42 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .footer-info{
     width: 100%;
     background-color: #06175d;
-    height: 500px;
+    height: max-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: start;
+    padding: 50px;
+    gap: 70px;
 }
 .footer-info div{
     height: 85%;
-    width: 23%;
+    /* width: 23%; */
     display: flex;
     flex-direction: column;
+}
+.footer-info-addressandContactDetails{
+    width: 30%;
+}
+.footer-info-aboutUs, .footer-info-ourServices{
+    width: max-content;
+}
+.footer-info-hospitalHours{
+    width: 25%;
+}
+@media screen and (max-width:900px) {
+    .footer-info-hospitalHours{
+        width: 49%;
+    }
 }
 .footer-info-addressandContactDetails img{
     width: 100px;
     height: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .footer-info-addressandContactDetails address{
     width: 90%;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .footer-info-addressandContactDetails p{
     color: white;
@@ -925,6 +947,25 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     margin-bottom: 10px;
     font-weight: 400;
     width: 100%;
+}
+.footer-info-addressandContactDetails .copyright_socials{
+    margin-top: 50px;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    height: max-content;
+}
+.footer-info-addressandContactDetails .copyright_socials small{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer-info-addressandContactDetails .copyright_socials div{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    gap: 10px;
 }
 .footer-info-addressandContactDetails .copyright_socials a{
     background-color: white;
@@ -958,7 +999,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 }
 .footer-info-hospitalHours p{
-    width:max-content ;
+    width:100% ;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #007dbc23;
@@ -974,11 +1015,12 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     font-size: 16px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .footer-info-hospitalHours p span small:nth-child(1){
     font-size: 16px;
-    width: 40%;
+    width: 50%;
 }
 .footer-info-hospitalHours p span small{
     font-size: 13px;
@@ -990,7 +1032,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     padding: 20px;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: max-content;
+    padding: 5px;
 }
 .copyright_socials{
     display: flex;
