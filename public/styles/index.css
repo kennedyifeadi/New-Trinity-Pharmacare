@@ -822,9 +822,9 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .calltoactionSection h1 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 600;
     color: white;
-    text-align: center
+    text-align: start;
 }
 .calltoactionSection div{
     display: flex;
@@ -843,7 +843,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     padding-left: 30px;
     padding-right: 30px;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     background-color: white;
     border-radius: 10px;
     color: #06175d;
