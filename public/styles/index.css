@@ -151,7 +151,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 /*  tablet responsiveness for carousel section  */
 
-@media screen and (max-width:884px){
+@media screen and (max-width:900px){
     .navBar > div{
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -230,35 +230,45 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         position: absolute;
         top: 0;
         width: 100%;
-        background-color: #007dbc67;
-        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
-        padding-left: 10px;
+        background-color: #0d0d0e67;
+        /* background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%); */
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .carouselButton span{
+        width: 10px;
+        height: 10px;
     }
     .carouselItemTwo{
         /* display: none; */
         position: absolute;
         top: 0;
         width: 100%;
-        background-color: #007dbc67;
-        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
-        align-items: flex-end;
-        text-align: end;
-        padding-right: 10px;
+        background-color: #0d0d0e67;
+        /* background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%); */
+        align-items: flex-start;
+        text-align: start;
+        padding-left: 30px;
+        padding-right: 30px;
+
     }
     .carouselImg{
         width: 100%;
     }
     .carouselItem h1, .carouselItemTwo h1{
-        font-size: 36px;
+        font-size: 28px;
     }
     .carouselItem h3, .carouselItemTwo h3{
-        font-size: 24px;
+        font-size: 20px;
     }
     .carouselItem p, .carouselItemTwo p{
-        width: 90%;
+        width: 100%;
     }
     .carouselItem a, .carouselItemTwo a{
-        width: 40%;
+        width: max-content;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .missionAndVisionStatement{
         height: max-content;
@@ -905,7 +915,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     height: max-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
     padding: 50px;
     gap: 70px;
 }
