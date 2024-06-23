@@ -71,6 +71,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     font-weight: 700;
     letter-spacing: 5.2px;
     color: #fff;
+    height: max-content;
 }
 .carouselItem h3, .carouselItemTwo h3{
     font-size: 36px;
@@ -88,7 +89,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .carouselItem a, .carouselItemTwo a{
     text-decoration: none;
     color: #fff;
-    width: 20%;
+    width: max-content;
+    padding: 10px;
     border: 2px solid white;
     display: flex;
     justify-content: center;
@@ -101,9 +103,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     background-color: #10d4fb8c;
 }
 .missionAndVisionStatement{
-    position: absolute;
-    top: 105%;
-    width: 89%;
+    margin-top: 50px;
     height: max-content;
     border-radius: 4px;
     background-color: #007dbc;
@@ -152,6 +152,10 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 /*  tablet responsiveness for carousel section  */
 
 @media screen and (max-width:900px){
+    .navBar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .navBar > div{
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -161,7 +165,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         width: max-content;
     }
     .navBar > div > a{
-        width: 15%;
+        width: 100%;
     }
     .navBar > div > a > img{
         object-fit: contain;
@@ -171,8 +175,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         position: absolute;
         top: 0;
         width: 100%;
-        background-color: #007dbc67;
-        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
+        background-color: #0d0d0e67;
+        background: linear-gradient(90deg, #0d0d0e67 0%, #0d0d0e67 100%);
         padding-left: 70px;
     }
     .carouselItemTwo{
@@ -180,14 +184,19 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         position: absolute;
         top: 0;
         width: 100%;
-        background-color: #007dbc67;
-        background: linear-gradient(90deg, #007dbc67 0%, rgba(87, 199, 255, 0.24) 100%);
+        background-color: #0d0d0e67;
+        background: linear-gradient(90deg, #0d0d0e67 0%, #0d0d0e67 100%);
         align-items: flex-end;
         text-align: end;
         padding-right: 70px;
     }
     .carouselImg{
         width: 100%;
+    }
+    .carouselItemTwo{
+        align-items: flex-start;
+        text-align: end;
+        padding-right: 70px;
     }
     .carouselItem h1, .carouselItemTwo h1{
         font-size: 36px;
@@ -199,7 +208,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         width: 90%;
     }
     .carouselItem a, .carouselItemTwo a{
-        width: 20%;
+        width: max-content;
     }
     .missionAndVisionStatement{
         height: max-content;
@@ -211,7 +220,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 /*  mobile responsiveness for carousel section */
 
-@media screen and (max-width:450px){
+@media screen and (max-width:500px){
     .navBar{
         z-index: 111;
         padding-left: 10px;
@@ -285,13 +294,13 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     padding-right: 50px;
     display: flex;
     height: max-content;
-    margin-top: 350px;
+    margin-top: 50px;
 }
 .aboutUsSection div{
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 800px;
 }
 .aboutUsSection div > img{
     width: 100%;
@@ -323,15 +332,15 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 /*  tablet responsiveness for about us section */
 
-@media screen and (max-width:884px){
+@media screen and (max-width:900px){
     .aboutUsSection{
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 470px;
+        flex-direction: column;
     }
     .aboutUsSection div > h1{
-        padding-left: 0px;
-        text-align: center;
+        padding-left: 10px;
+        text-align: left;
     }
     .aboutUsSection div > p{
         font-size: 20px;
@@ -350,7 +359,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         padding-left: 10px;
         padding-right: 10px;
         flex-direction: column;
-        margin-top: 600px;
     }
     .aboutUsSection div > h1{
         padding-left: 0px;
@@ -370,9 +378,10 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 .servicesSection{
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: max-content;
     width: 100%;
     margin-top: 100px;
+    padding: 50px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: #06175d;
@@ -431,6 +440,29 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         padding-right: 50px;
         border-top-right-radius: 40px;
         font-size: 24px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .servicesSection div:nth-child(2){
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        
+    }
+    .servicesSection div h1{
+        font-size: 24px;
+    }
+    .servicesSection div small{
+        width: 20%;
+    }
+    .servicesSection div span{
+        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-top-right-radius: 0px;
+        font-size: 24px;
+        width: 100%;
     }
 }
 
@@ -509,7 +541,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     border-radius: 50%;
     width: 100px;
     position: absolute;
-    top: 50%;
+    top: 44%;
+    right: 47.5%;
 }
 .whychooseucontainerDetails{
     width: 100%;
@@ -527,12 +560,14 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     padding-bottom: 20px;
     padding-top: 50px;
 }
-.whychooseucontainerDetails > span:nth-child(1){
-    padding-right: 40px;
-    border-right: 2px solid gray;
-}
 .whychooseucontainerDetails > span:nth-child(2){
     padding-left: 40px;
+    border-left:2px solid gray ;
+}
+.whychooseucontainerDetailsA span:nth-child(2){
+    padding-left: 40px;
+    border-left: 2px solid gray;
+
 }
 .whychooseucontainerDetails span > h1{
     font-size: 36px;
@@ -545,12 +580,63 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     color: gray;
 }
 
+@media screen and (max-width:900px) {
+    .whychooseucontainerDetails:nth-child(1){
+        padding-right: 40px;
+        border-right: 2px solid gray;
+    }
+    .whychooseucontainerDetailsA span:nth-child(1){
+        border-right: none;
+
+    }
+    .whychooseucontainerDetailsA span:nth-child(2){
+        padding-left: 40px;
+        border-left: 2px solid gray;
+
+    }
+    .whychooseucontainerDetails > span:nth-child(2){
+        border-left:none ;
+    }
+}
+
+/* tablet responsiveness of why choose us */
+@media screen and (max-width:790px) {
+    .whychooseusSection .whychooseucontainer > img{
+        top: 45%;
+    }
+    .whychooseucontainerDetails:nth-child(1){
+        border-bottom: 2px solid gray;
+    }
+    .whychooseucontainerDetails > span{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+    .whychooseucontainerDetails:nth-child(1){
+        padding-right: 40px;
+        border-right: 2px solid gray;
+    }
+    .whychooseucontainerDetailsA span:nth-child(1){
+        border-right: none;
+
+    }
+    .whychooseucontainerDetailsA span:nth-child(2){
+        padding-left: 40px;
+        border-left: 2px solid gray;
+
+    }
+}
+
 /*  mobile responsiveness why choose us section */
-@media screen and (max-width:450px) {
+@media screen and (max-width:750px) {
     .whychooseusSection{
         padding-left: 10px;
         padding-right: 10px;
         gap: 20px;
+        border: 1px solid red;
     }
     .whychooseusSection .whychooseucontainer > img{
         display: none;
@@ -559,11 +645,11 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
     }
-    .whychooseucontainerDetails:nth-child(1){
-        border-bottom: 2px solid gray;
+    .whychooseucontainerDetails{
+        border-bottom: none;
     }
     .whychooseucontainerDetails > span{
         height: 260px;
@@ -572,20 +658,62 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
     .whychooseucontainerDetails > span:nth-child(1){
         padding-right: 10px;
-        border-right: 2px solid gray;
-        border-top: 2px solid gray;
+        border-right: none;
+        border-top: none
     }
     .whychooseucontainerDetails > span:nth-child(2){
         padding-left: 10px;
-        border-right: 2px solid gray;
-        border-top: 2px solid gray;
+        border-right: none;
+        border-top: none;
     }
     .whychooseucontainerDetails span > h1{
         font-size: 24px;
         color: rgb(46, 46, 46);
         font-weight: 600;
-        text-align: center;
+        text-align: start;
         margin-bottom: 10px;
+        padding-left: 10px;
+        position: relative;
+    }
+    .whychooseucontainerDetails span > h1::before{
+        content: '';
+        width: 5px;
+        background: black;
+        height: 5px;
+        border-radius: 100px;
+        position: absolute;
+        top: 45%;
+        left: 0%;
+    }
+    .whychooseucontainerDetails span > p{
+        font-size: 20px;
+        color: gray;
+    }
+    .whychooseucontainerDetails:nth-child(1) > span:nth-child(1){
+        padding-left: 50px;
+        border: 1px solid red;
+    }
+    .whychooseucontainerDetailsA span:nth-child(1){
+        width: 100%;
+    }
+    .whychooseucontainerDetailsA span:nth-child(2){
+        border-left: none;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+
+
+
+    .whychooseucontainerDetails:nth-child(2){
+        border-bottom: none;
+    }
+    .whychooseucontainerDetails > span:nth-child(1){
+        padding-right: 0px;
+        border-right: none;
+    }
+    .whychooseucontainerDetails > span:nth-child(2){
+        padding-left: 0px;
     }
     .whychooseucontainerDetails span > p{
         font-size: 20px;
@@ -838,13 +966,14 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .calltoactionSection div{
     display: flex;
-    width: 100%;
+    width: 97%;
     justify-content: space-between;
+
 }
 .calltoactionSection div h3{
     font-size: 28px;
     font-weight: 500;
-    color: white;
+    color: #ffffff;
 }
 .calltoactionSection div a{
     padding: 10px;
@@ -873,6 +1002,10 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         padding-left: 20px;
         padding-right: 20px;
         font-size: 24px;
+    }    .calltoactionSection div{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
     }
 }
 
