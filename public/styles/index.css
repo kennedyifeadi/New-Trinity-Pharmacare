@@ -107,11 +107,12 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     height: max-content;
     border-radius: 4px;
     background-color: #007dbc;
+    width: 90%;
     display: flex;
-    margin-left: 66px;
 }
 .missonStatement, .visionStatement{
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 20px;
 }
@@ -214,7 +215,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         height: max-content;
         flex-direction: column;
         width: 90%;
-        margin-left: 5%;
     }
 }
 
@@ -283,7 +283,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         height: max-content;
         flex-direction: column;
         width: 90%;
-        margin-left: 5%;
     }
 }
 
@@ -636,7 +635,16 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         padding-left: 10px;
         padding-right: 10px;
         gap: 20px;
-        border: 1px solid red;
+    }
+    .whychooseusSection > h1{
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .whychooseusSection > h1 small{
+        font-size: 28px;
+        font-weight: 600;
+        color: #007dbc;
     }
     .whychooseusSection .whychooseucontainer > img{
         display: none;
@@ -667,7 +675,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         border-top: none;
     }
     .whychooseucontainerDetails span > h1{
-        font-size: 24px;
+        font-size: 20px;
         color: rgb(46, 46, 46);
         font-weight: 600;
         text-align: start;
@@ -691,7 +699,6 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
     .whychooseucontainerDetails:nth-child(1) > span:nth-child(1){
         padding-left: 50px;
-        border: 1px solid red;
     }
     .whychooseucontainerDetailsA span:nth-child(1){
         width: 100%;
@@ -862,6 +869,13 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
         margin-top: 70px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .main_product{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main_product h1{
+        font-size: 24px;
     }
     .main_product-cards{
         flex-direction: column;
