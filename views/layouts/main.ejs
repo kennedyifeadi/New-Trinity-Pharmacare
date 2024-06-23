@@ -16,6 +16,8 @@
     <% if (script !== undefined) { %>
     <script src="./script/<%= script %>.js" defer></script>
     <% } %>
+    <!-- <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js" defer></script> -->
+    <script src="./script/flowbite.js" defer></script>
     <script src="./script/index.js" defer></script>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/<%= style %>.css" />
@@ -30,6 +32,5 @@
     <%- include('../partials/footer.ejs') %>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script> -->
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
   </body>
 </html>
