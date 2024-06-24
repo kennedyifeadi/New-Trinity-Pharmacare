@@ -76,9 +76,31 @@
 }
 
 
+
+@media screen and (max-width:1100px) {
+    .serviceherosection{
+        background-position: 0px -100px;
+    }
+    .serviceslist div{
+        flex-direction: column;
+    }
+    .serviceslist div:nth-child(2){
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:730px){
+    .serviceherosection{
+        background-position: 0px -50px;
+        height: 200px;
+    }
+    .serviceherosection h1{
+        font-size: 36px;
+    }
+}
 /* services page mobile view responsiveness */
 
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
     .servicesmainsection{
         display: flex;
         flex-direction: column;
@@ -91,7 +113,7 @@
         padding-bottom: 10px;
     }
     .serviceherosection h1{
-        font-size: 46px;
+        font-size: 36px;
         padding-left: 10px;
     }
     .serviceslist{
@@ -115,10 +137,16 @@
     .serviceslist div:nth-child(2){
         flex-direction: column-reverse;
     }
+    .serviceslist div span h1{
+        font-size: 36px;
+        text-align: center;
+        padding: 0;
+    }
     .serviceslist div span p{
         padding-left:10px ;
         margin-top: 20px;
         padding-right:10px ;
+        text-align: center;
     }
     .serviceslist div span img{
         height: calc((100dvw / 1.2) - 20px);

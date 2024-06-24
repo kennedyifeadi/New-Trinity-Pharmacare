@@ -241,7 +241,7 @@
         background-position: 0px 0px;
     }
     .aboutherosection h1{
-        font-size: 48px;
+        font-size: 36px;
         padding-left: 10px;
         margin-bottom: 10px;
     }
@@ -250,6 +250,13 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+.aboutus_storySection span h1{
+    font-size: 36px;
+    margin-top: 20px;
+}
+.aboutus_storySection span h1 small{
+    font-size: 36px;
+}
     .aboutus_storySection span:nth-child(2){
         padding: 0px;
     }
@@ -260,11 +267,13 @@
         padding-left: 10px;
         padding-right: 10px;
         flex-direction: column;
+        gap: 10px;
     }
     .aboutus_maissionandvisionsection{
         flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
+        gap: 10px;
     }
     .aboutus_corevaluessection{
         flex-direction: column;
@@ -304,10 +313,12 @@
         width: 100%;
     }
     .aboutus_commitmentsection span h1, .aboutus_speciatiessection span h1{
-        font-size: 36px;
+        text-align: center;
+        font-size: 36px;    
     }
     .aboutus_commitmentsection span p, .aboutus_speciatiessection span p{
         font-size: 18px;
         padding-right:0px ;
+        text-align: center;
     }
 }

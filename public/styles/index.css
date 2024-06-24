@@ -35,7 +35,7 @@ body{
 .carouselItem{
     background: rgb(0,125,188);
 background: linear-gradient(270deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%);
-width: 60%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,6 +72,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     letter-spacing: 5.2px;
     color: #fff;
     height: max-content;
+    line-height: 3.5rem;
 }
 .carouselItem h3, .carouselItemTwo h3{
     font-size: 36px;
@@ -201,6 +202,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
     .carouselItem h1, .carouselItemTwo h1{
         font-size: 36px;
+    line-height: 2.5rem;
+
     }
     .carouselItem h3, .carouselItemTwo h3{
         font-size: 24px;
@@ -266,6 +269,8 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
     .carouselItem h1, .carouselItemTwo h1{
         font-size: 28px;
+    line-height: 2rem;
+
     }
     .carouselItem h3, .carouselItemTwo h3{
         font-size: 20px;
@@ -1024,12 +1029,13 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 
 /* mobile responsiveness for call to action section */
-@media screen and (max-width:450px) {
+@media screen and (max-width:600px) {
     .calltoactionSection{
         padding: 20px;
     }
     .calltoactionSection h1 {
         font-size: 22px;
+        line-height: 1.5rem
     }
     .calltoactionSection div{
         flex-direction: column;
@@ -1214,8 +1220,12 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 
 /* mobile responsiveness for footer section */
-
-@media screen and (max-width:450px){
+@media screen and (max-width:1160px){
+    .footer-info-hospitalHours{
+        width: 50%;
+    }
+}
+@media screen and (max-width:677px){
     .footer_Details{
         margin-top: 50px;
     }

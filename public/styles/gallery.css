@@ -182,12 +182,12 @@
         height: max-content;
     }
     .mySlides{
-        height: 500px;
+        height: 250px;
     }
     .mySlides img{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
         object-position: 0px 0px;
       }
     .text {
@@ -206,12 +206,12 @@
         height: max-content;
     }
     .mySlides{
-        height: 500px;
+        height: 250px;
     }
     .mySlides img{
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: fill;
         object-position: 0px 0px;
       }
     .text {
