@@ -81,7 +81,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 .carouselItem p, .carouselItemTwo p{
     color: #fff;
-    width: 50%;
+    width: 80%;
     
 }
 .carouselItemTwo p{
@@ -358,7 +358,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 /* mobile responsiveness for about us section */
 
-@media screen and (max-width:450px){
+@media screen and (max-width:650px){
     .aboutUsSection{
         padding-left: 10px;
         padding-right: 10px;
@@ -366,6 +366,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
     .aboutUsSection div > h1{
         padding-left: 0px;
+        font-size: 36px;
         text-align: center;
     }
     .aboutUsSection div > p{
@@ -472,7 +473,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 
 /*  mobile responsiveness for Services section */
 
-@media screen and (max-width:450px){
+@media screen and (max-width:650px){
     .servicesSection{
         height: max-content;
         margin-top: 50px;
@@ -635,7 +636,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
 }
 
 /*  mobile responsiveness why choose us section */
-@media screen and (max-width:750px) {
+@media screen and (max-width:1350px) {
     .whychooseusSection{
         padding-left: 10px;
         padding-right: 10px;
@@ -726,6 +727,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     }
     .whychooseucontainerDetails > span:nth-child(2){
         padding-left: 0px;
+        border-left: none;
     }
     .whychooseucontainerDetails span > p{
         font-size: 20px;

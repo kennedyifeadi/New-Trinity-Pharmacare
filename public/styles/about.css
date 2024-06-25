@@ -193,7 +193,7 @@
 
 /* tablet responsiveness */
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1150px) {
     .aboutus_storySection{
         flex-direction: column;
     }
