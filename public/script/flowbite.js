@@ -1697,7 +1697,7 @@
                 inactiveClasses:
                   "bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
               },
-              interval: 5000,
+              interval: 8000,
               onNext: function () {},
               onPrev: function () {},
               onChange: function () {}
