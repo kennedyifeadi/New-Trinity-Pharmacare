@@ -107,7 +107,8 @@
     color: white;
     text-align: center;
     font-size: 18px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
+    border: 1px solid red;
 }
 .viewproductlistsection{
     width: 100%;

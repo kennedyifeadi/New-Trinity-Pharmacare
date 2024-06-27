@@ -233,9 +233,16 @@
     }
 }
 
+@media screen and (max-width:1000px){
+    .aboutherosection{
+        height: 300px;
+        background-position: 0px 0px;
+    }
+}
+
 /* mobile responsiveness */
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:650px) {
     .aboutherosection{
         height: 200px;
         background-position: 0px 0px;

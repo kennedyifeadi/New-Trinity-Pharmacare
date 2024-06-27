@@ -321,6 +321,7 @@ background: linear-gradient(90deg, rgba(0,125,188,1) 0%, rgba(87,199,255,1) 100%
     color: #007dbc;
 }
 .aboutUsSection div > p{
+    margin-top: 20px;
     padding-left: 50px;
     margin-bottom: 20px;
     font-size: 24px;
