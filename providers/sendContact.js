@@ -39,7 +39,7 @@ async function sendEmail({ email, name, subject, message }) {
         const emailOptions = {
           from: `Trinity Pharmacare User ${email}`,
           // to: "trinitypharmacareltd@gmail.com",
-          to: "obikoyaadebayo55@gmail.com",
+          to: "trinitypharmacareltd@gmail.com",
           subject: "Message from User",
           text: `User Message`,
           html: template
